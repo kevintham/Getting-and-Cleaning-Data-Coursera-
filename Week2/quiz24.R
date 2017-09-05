@@ -1,0 +1,5 @@
+conn <- url('http://biostat.jhsph.edu/~jleek/contact.html')
+htmlCode = readLines(con = conn)
+close(conn)
+vec <- c(10,20,30,100)
+nchar(htmlCode[vec])
